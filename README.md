@@ -6,7 +6,7 @@ Usage steps for tutorialspoint hack
 2.  Open console in Firefox or Chrome (Ctr+Shift+i)
 3.  Paste below lines to console where the curson is blikning
 
-    s=document.createElement('script');s.type='text/javascript';
+    var s=document.createElement('script');s.type='text/javascript';
     s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialspointhack.js'; 
     document.body.appendChild(s);
 
