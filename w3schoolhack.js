@@ -37,7 +37,7 @@
  * @return {String} nextPageLinkElement id or class of the next page link element
  * @return {Function} callback process extra logic for each page fetch
 */
-('.w3-container,#topnav,#leftmenuinner,#card,#bg-exit,div#google_image_div,div[id*="google"],#leftmenu,iframe,#mainLeaderboard,#right,.footer', 5, '.next a', function () {
+('.w3-container,#topnav,#leftmenuinner,#card,#bg-exit,div#google_image_div,div[id*="google"],#leftmenu,iframe,#mainLeaderboard,#right,.footer', 100, '.next a', function () {
   jQuery('#main').css('width', '100%');
   jQuery('#main').css('padding-left', '100px');
   //jQuery('.middle-col, pre, content,body').css('background-color', '#151515');
