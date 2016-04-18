@@ -18,7 +18,8 @@ Usage steps for w3schools hack
 
     <pre>
     var s=document.createElement('script');s.type='text/javascript';
-    s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/w3schoolhack.js'; document.body.appendChild(s);
+    s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/w3schoolhack.js'; 
+    document.body.appendChild(s);
     </pre>
 
 API is designed to be used for other sites as well.
