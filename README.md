@@ -5,18 +5,20 @@ Usage steps for tutorialspoint hack
 1.  Open any tutorial from tutorialspoint.com, eg. http://www.tutorialspoint.com/go/index.htm
 2.  Open console in Firefox or Chrome (Ctr+Shift+i)
 3.  Paste below lines to console where the curson is blikning
-
+<pre>
     var s=document.createElement('script');s.type='text/javascript';
     s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialspointhack.js'; 
     document.body.appendChild(s);
-
+</pre>
 Usage steps for w3schools hack
+
 1.  Open any tutorial from w3schools.com, eg. http://www.w3schools.com/jsref/default.asp
 2.  Open console in Firefox or Chrome (Ctr+Shift+i)
 3.  Paste below lines to console where the curson is blikning
 
-    s=document.createElement('script');s.type='text/javascript';
+    <pre>
+    var s=document.createElement('script');s.type='text/javascript';
     s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/w3schoolhack.js'; document.body.appendChild(s);
- 
+    </pre>
 
 API is designed to be used for other sites as well.
