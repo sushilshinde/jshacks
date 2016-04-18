@@ -49,7 +49,5 @@ Usage steps
 ('.w3-container,#topnav,#leftmenuinner,#card,#bg-exit,div#google_image_div,div[id*="google"],#leftmenu,iframe,#mainLeaderboard,#right,.footer', 100, '.next a', function () {
   jQuery('#main').css('width', '100%');
   jQuery('#main').css('padding-left', '100px');
-  //jQuery('.middle-col, pre, content,body').css('background-color', '#151515');
-  //jQuery('p,h,h1,h2,h3,li,pre').css('color', '#F4F6F6');
 }
 );
