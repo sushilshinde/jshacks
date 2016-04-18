@@ -10,6 +10,8 @@ Usage steps for tutorialspoint hack
     s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialspointhack.js'; 
     document.body.appendChild(s);
 </pre>
+
+
 Usage steps for w3schools hack
 
 1.  Open any tutorial from w3schools.com, eg. http://www.w3schools.com/jsref/default.asp
