@@ -15,4 +15,5 @@ Usage steps for w3schools hack
     s=document.createElement('script');s.type='text/javascript';
     s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/w3schoolhack.js'; document.body.appendChild(s);
 
+
 API is designed to be used for other sites as well.
