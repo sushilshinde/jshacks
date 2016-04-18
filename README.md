@@ -3,9 +3,9 @@ These script are hacks for w3schools.com and tutorialspoint.com, as tutorials on
 Usage steps for tutorialspoint hack
 
 1.  Open any tutorial from tutorialspoint.com, eg. http://www.tutorialspoint.com/go/index.htm
-2.  
+
 2.  Open console in Firefox or Chrome (Ctr+Shift+i)
-3.  
+
 3.  Paste below lines to console where the curson is blikning
 
     s=document.createElement('script');s.type='text/javascript';
