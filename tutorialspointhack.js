@@ -46,13 +46,6 @@ Usage steps
     fetchPage();
   });
 })
-/**
- * Converts tutorial into one page for tutorials like tutorialpoint.com, w3school.com
- * @param {String } removeElements  contain comma seperated ids, classes, tags for jquery selector function 
- * @param {Number} maxPages maximum number of pages to be fetched
- * @return {String} nextPageLinkElement id or class of the next page link element
- * @return {Function} callback process extra logic for each page fetch
-*/
 ('.sidebar, .footer-copyright, header, .cover, .bottomgooglead, #rightbar', 100, '.nxt-btn a', function () {
     $('.col-md-7').attr('class', 'middle-col');
     $('.middle-col').css('min-height', '1px');
