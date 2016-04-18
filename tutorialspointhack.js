@@ -11,8 +11,8 @@ Usage steps
 /**
  * @param {String } removeElements  contain comma seperated ids, classes, tags for jquery selector function 
  * @param {Number} maxPages maximum number of pages to be fetched
- * @return {String} nextPageLinkElement id or class of the next page link element
- * @return {Function} callback process extra logic for each page fetch
+ * @param {String} nextPageLinkElement id or class of the next page link element
+ * @param {Function} callback process extra logic for each page fetch
 */
 (function (removeClasses, maxPages, nextButton, callback) {
   (function (cp) {
