@@ -23,7 +23,7 @@ Usage steps
     OR 
 
     <pre>
-    s=document.createElement('script');s.type='text/javascript';
+    var s=document.createElement('script');s.type='text/javascript';
     s.src='https://cdn.rawgit.com/sushatgithub/jshacks/master/tutorialshack.js';
     document.body.appendChild(s);
     </pre>
