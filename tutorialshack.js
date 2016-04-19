@@ -20,7 +20,7 @@ s=document.createElement('script');s.type='text/javascript';s.src='https://raw.g
     script.type = 'text/javascript';
     script.src = 'https://code.jquery.com/jquery-2.2.3.min.js';
     script.onload = cp;
-    script.crossorigin="anonymous";
+    script.crossorigin = 'anonymous';
     document.body.appendChild(script);
   }) (function () {
     var profile,
@@ -52,14 +52,14 @@ s=document.createElement('script');s.type='text/javascript';s.src='https://raw.g
         }).done(function (data) {
           jQuery('body').append(jQuery.parseHTML(data));
           jQuery(profile.rmEl).remove();
+          jQuery.each(profile.batchScripts, function (i, script) {
+            console.log(script, typeof script);
+            (new Function(script)) ();
+          });
           pageCount++;
           fetchPage();
         });
       } else {
-        jQuery.each(profile.batchScripts, function (i, script) {
-          console.log(script,typeof script);
-          (new Function(script)) ();
-        });
         alert(pageCount + ' Pages Loaded\nHappy Reading')
       }
     };
