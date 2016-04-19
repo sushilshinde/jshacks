@@ -1,6 +1,6 @@
 This script is hack for tutorials sites where are they are divided into pages, reader need to click next button for every page. Also, ad banners are distracting while reading. This script will load all the pages in the tutorial without refreshing a page and will remove all the banners, header, menus and footer.
 
-Usage steps for tutorialspoint hack
+Usage steps
 
 1.  Open any tutorial from (Currently these are supported)
 
