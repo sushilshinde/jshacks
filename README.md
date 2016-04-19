@@ -11,7 +11,7 @@ Usage steps
     c.  tutorialrepublic.com, eg. http://www.tutorialrepublic.com/twitter-bootstrap-tutorial
     
 2.  Open console in Firefox or Chrome (Ctr+Shift+i)
-3.  Paste below lines to console where the curson is blikning
+3.  Paste below lines to console where the curson is blikning and close console
 
     Recommended
     <pre>
