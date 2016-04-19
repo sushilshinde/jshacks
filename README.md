@@ -3,9 +3,13 @@ This script is hack for  sites tutorials where are divided into pages, readers n
 Usage steps for tutorialspoint hack
 
 1.  Open any tutorial from (Currently these are supported)
+
     a.  tutorialspoint.com, eg. http://www.tutorialspoint.com/go/index.htm
+    
     b.  w3schools.com, eg. http://www.w3schools.com/html/html_intro.asp
-    c.  tutorialrepublic.com, eg. http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/
+    
+    c.  tutorialrepublic.com, eg. http://www.tutorialrepublic.com/twitter-bootstrap-tutorial
+    
 2.  Open console in Firefox or Chrome (Ctr+Shift+i)
 3.  Paste below lines to console where the curson is blikning
 <pre>
