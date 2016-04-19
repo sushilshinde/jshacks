@@ -19,7 +19,7 @@
 	"site": "www.tutorialspoint.com",
 	"rmEl": ".sidebar, .footer-copyright, header, .cover, .bottomgooglead, #rightbar",
 	"maxPages": 100,
-	"nextBtn": ".next-btn a",
+	"nextBtn": ".nxt-btn a",
 	"batchScripts": [
 		"jQuery(\".col-md-7\").attr(\"class\", \"middle-col\")",
 		"$(\".middle-col\").css(\"min-height\", \"1px\")"
