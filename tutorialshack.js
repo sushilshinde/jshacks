@@ -32,7 +32,7 @@
     }
     var fetchPage = function () {
       if (!profile) return;
-      profile.maxPages = 10;
+    //  profile.maxPages = 10;
       var page = jQuery(profile.nextBtn).last().attr('href');
       if (page && jQuery.inArray(page, cachedPages) < 0 && profile.maxPages >= pageCount) {
         cachedPages.push(page);
