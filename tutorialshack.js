@@ -18,14 +18,15 @@
         profile = $.grep(data, function (n, i) {
           return n.site == window.location.host;
         });
-        profile =profile && profile.length > 0 ? profile[0]:null;
+        profile = profile && profile.length > 0 ? profile[0] : null;
         $.event.trigger({
           type: 'CONFIG_LOADED'
         });
       });
     }) ();
     var fetchPage = function () {
-      if(!profile)return;profile.maxPages = 5;
+      if (!profile) return;
+      profile.maxPages = 5;
       var page = jQuery(profile.nextBtn).last().attr('href');
       console.log(profile, page && jQuery.inArray(page, cachedPages) < 0 && profile.maxPages >= pageCount)
       if (page && jQuery.inArray(page, cachedPages) < 0 && profile.maxPages >= pageCount) {
@@ -42,10 +43,9 @@
           fetchPage();
         });
       } else {
-         jQuery.each(profile.batchScripts,function(i,script){
-            (new Function(script))();
-         });
-         
+        jQuery.each(profile.batchScripts, function (i, script) {
+          (new Function(script)) ();
+        });
         alert(pageCount + ' Pages Loaded\nHappy Reading')
       }
     };
