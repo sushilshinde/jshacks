@@ -37,8 +37,6 @@
         }).done(function (data) {
           jQuery('body').append(jQuery.parseHTML(data));
           jQuery(profile.rmEl).remove();
-          //new Function(o[0].batchScripts[0])
-          //callback ? callback.call()  : null;
           pageCount++;
           fetchPage();
         });
