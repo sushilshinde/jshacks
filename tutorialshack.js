@@ -20,6 +20,7 @@ s=document.createElement('script');s.type='text/javascript';s.src='https://raw.g
     script.type = 'text/javascript';
     script.src = 'https://code.jquery.com/jquery-2.2.3.min.js';
     script.onload = cp;
+    script.crossorigin="anonymous";
     document.body.appendChild(script);
   }) (function () {
     var profile,
