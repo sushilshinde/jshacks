@@ -23,6 +23,6 @@
 	"batchScripts": [
 		"jQuery(\".col-md-7\").attr(\"class\", \"middle-col\")",
 		"$(\".middle-col\").css(\"min-height\", \"1px\")",
-		$(\".middle-col\").css(\"height\", \"100%\")"
+		"$(\".middle-col\").css(\"height\", \"100%\")"
 	]
 }]
