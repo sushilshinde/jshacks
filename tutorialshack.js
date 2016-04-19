@@ -57,6 +57,7 @@ s=document.createElement('script');s.type='text/javascript';s.src='https://raw.g
         });
       } else {
         jQuery.each(profile.batchScripts, function (i, script) {
+          console.log(script,typeof script);
           (new Function(script)) ();
         });
         alert(pageCount + ' Pages Loaded\nHappy Reading')
