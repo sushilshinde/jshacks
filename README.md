@@ -16,7 +16,7 @@ Usage steps
     Recommended
     <pre>
     var s=document.createElement('script');s.type='text/javascript';
-    s.src='https://cdn.rawgit.com/sushatgithub/jshacks/master/tutorialshack.min.js';
+    s.src='https://cdn.rawgit.com/sushatgithub/jshacks/master/tutorialshack.js';
     document.body.appendChild(s);
     </pre>
 
