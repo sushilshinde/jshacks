@@ -43,7 +43,6 @@ s=document.createElement('script');s.type='text/javascript';s.src='https://raw.g
     var fetchPage = function () {
       if (!profile) return;
       var page = jQuery(profile.nextBtn).last().attr('href');
-      console.log(profile, page && jQuery.inArray(page, cachedPages) < 0 && profile.maxPages >= pageCount)
       if (page && jQuery.inArray(page, cachedPages) < 0 && profile.maxPages >= pageCount) {
         cachedPages.push(page);
         jQuery.ajax({
