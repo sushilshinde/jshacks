@@ -16,7 +16,7 @@ Usage steps for tutorialspoint hack
     Recommended
     <pre>
     var s=document.createElement('script');s.type='text/javascript';
-    s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialshack.min.js';
+    s.src='https://cdn.rawgit.com/sushatgithub/jshacks/master/tutorialshack.min.js';
     document.body.appendChild(s);
     </pre>
 
@@ -24,7 +24,7 @@ Usage steps for tutorialspoint hack
 
     <pre>
     s=document.createElement('script');s.type='text/javascript';
-    s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialshack.js';
+    s.src='https://cdn.rawgit.com/sushatgithub/jshacks/master/tutorialshack.js';
     document.body.appendChild(s);
     </pre>
 
