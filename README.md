@@ -20,12 +20,5 @@ Usage steps
     document.body.appendChild(s);
     </pre>
 
-    OR 
-
-    <pre>
-    var s=document.createElement('script');s.type='text/javascript';
-    s.src='https://cdn.rawgit.com/sushatgithub/jshacks/master/tutorialshack.js';
-    document.body.appendChild(s);
-    </pre>
 
 Fork config.json for adding more sites 
