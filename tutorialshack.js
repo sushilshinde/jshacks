@@ -8,7 +8,7 @@ Usage steps
 1.  Open any tutorial from tutorialspoint.com, eg. http://www.tutorialspoint.com/go/index.htm
 2.  Open console in Firefox or Chrome (Ctr+Shift+i)
 3.  Paste below line to console where the curson is blikning
-_s=document.createElement('script');_s.type='text/javascript';_s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialshack.js';document.body.appendChild(_s);
+s=document.createElement('script');s.type='text/javascript';s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialshack.js';document.body.appendChild(s);
 */
 /* Source Code */
 /**
