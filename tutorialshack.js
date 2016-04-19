@@ -27,40 +27,48 @@ s=document.createElement('script');s.type='text/javascript';s.src='https://raw.g
     pageCount = 0,
     cachedPages = [
     ];
+    var statusDiv = '<div style="position: absolute; top: 0;center:0; left: 0; width: 100%; " align="center"><pstyle="color: #cc6699; font-size: 8px; " id="loadingStatus">loading....</p></div>'
+    jQuery('body').prepend(statusDiv);
     (function () {
       jQuery.getJSON({
         url: jsonConfigFile,
         context: document.body
       }).done(function (data) {
-        profile = $.grep(data, function (n, i) {
+        profile = jQuery.grep(data, function (n, i) {
           return n.site == window.location.host;
         });
         profile = profile && profile.length > 0 ? profile[0] : null;
-        $.event.trigger({
+        jQuery.event.trigger({
           type: 'CONFIG_LOADED'
         });
       });
     }) ();
+    var displayFinal = function () {
+      jQuery('#loadingStatus').html('Total ' + (pageCount + 1) + ' pages loaded');
+    }
     var fetchPage = function () {
       if (!profile) return;
+      //profile.maxPages = 10;
       var page = jQuery(profile.nextBtn).last().attr('href');
       if (page && jQuery.inArray(page, cachedPages) < 0 && profile.maxPages >= pageCount) {
         cachedPages.push(page);
+        jQuery('#loadingStatus').html('Loading : ' + (pageCount + 1) + '. ' + page);
         jQuery.ajax({
           url: page,
           context: document.body
-        }).done(function (data) {
+        }).done(function (data, status) {
           jQuery('body').append(jQuery.parseHTML(data));
           jQuery(profile.rmEl).remove();
           jQuery.each(profile.batchScripts, function (i, script) {
-            console.log(script, typeof script);
             (new Function(script)) ();
-          });
+          })
           pageCount++;
           fetchPage();
+        }).fail(function () {
+          displayFinal();
         });
       } else {
-        alert(pageCount + ' Pages Loaded\nHappy Reading')
+        displayFinal();
       }
     };
     jQuery(document).on('CONFIG_LOADED', fetchPage);
