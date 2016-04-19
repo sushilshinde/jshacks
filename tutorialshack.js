@@ -64,4 +64,4 @@ s=document.createElement('script');s.type='text/javascript';s.src='https://raw.g
     };
     jQuery(document).on('CONFIG_LOADED', fetchPage);
   });
-}) ('https://raw.githubusercontent.com/sushatgithub/jshacks/master/config.json');
+}) ('https://cdn.rawgit.com/sushatgithub/jshacks/master/config.json');
