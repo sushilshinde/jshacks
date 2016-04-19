@@ -14,7 +14,8 @@ Usage steps for tutorialspoint hack
 3.  Paste below lines to console where the curson is blikning
 <pre>
     _s=document.createElement('script');_s.type='text/javascript';
-    _s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialshack.js';document.body.appendChild(_s);
+    _s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialshack.js';
+    document.body.appendChild(_s);
 </pre>
 
 Fork config.json for adding more sites 
