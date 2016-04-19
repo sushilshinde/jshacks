@@ -1,0 +1,31 @@
+[
+  {
+    'site': 'www.tutorialrepublic.com',
+    'rmEl': '#top,.menu-wrapper,.top-ad-wrapper,.sidebar,.leftcolumn,.bottom-ad,.footer-wrapper,.footer',
+    'maxPages': 100,
+    'nextBtn': '.next-page',
+    'batchScripts': [
+      'jQuery(\'.centercolumn\').css(\'width\', \'100%\')'
+    ]
+  },
+  {
+    'site': 'www.w3schools.com',
+    'rmEl': '.w3-container,#topnav,#leftmenuinner,#card,#bg-exit,div#google_image_div,div[id*="google"],#leftmenu,iframe,#mainLeaderboard,#right,.footer',
+    'maxPages': 100,
+    'nextBtn': '.next a',
+    'batchScripts': [
+      'jQuery(\'#main\').css(\'width\', \'100%\')',
+      'jQuery(\'#main\').css(\'padding-left\', \'100px\')'
+    ]
+  },
+  {
+    'site': 'www.tutorialspoint.com',
+    'rmEl': '.sidebar, .footer-copyright, header, .cover, .bottomgooglead, #rightbar',
+    'maxPages': 100,
+    'nextBtn': '.next-btn a',
+    'batchScripts': [
+      'jQuery(\'.col-md-7\').attr(\'class\', \'middle-col\')',
+      '$(\'.middle-col\').css(\'min-height\', \'1px\')'
+    ]
+  }
+]
