@@ -1,4 +1,4 @@
-This script is hack for tutorials sites where are they are divided into pages, reader need to click next button for every page. Also, ad banners are distracting while reading. This script will load all the pages in the tutorial without refreshing a page and will remove all the banners, header, menus and footer.
+This script is hack for tutorials sites where these are divided into pages, reader need to click next button for every page. Also, ad banners are distracting while reading even if you zoom. This script will load all the pages in the tutorial without refreshing a page and will remove all the banners, header, menus and footer.
 
 Usage steps
 
