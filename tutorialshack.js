@@ -1,4 +1,20 @@
-(function (configUrl) {
+/*
+This script is a hack for tutorials website where tutorials are divided into pages, readers needs to to click next for each page.
+This script will load all the pages in the tutorial without refreshing a page.
+
+Check config.json for currently supported tutorial websites
+
+Usage steps 
+1.  Open any tutorial from tutorialspoint.com, eg. http://www.tutorialspoint.com/go/index.htm
+2.  Open console in Firefox or Chrome (Ctr+Shift+i)
+3.  Paste below line to console where the curson is blikning
+_s=document.createElement('script');_s.type='text/javascript';_s.src='https://raw.githubusercontent.com/sushatgithub/jshacks/master/tutorialshack.js';document.body.appendChild(_s);
+*/
+/* Source Code */
+/**
+ * @param {String } jsonConfigFile  contain comma seperated ids, classes, tags for jquery selector function
+*/
+(function (jsonConfigFile) {
   (function (cp) {
     var script = document.createElement('script');
     script.type = 'text/javascript';
@@ -12,7 +28,7 @@
     ];
     (function () {
       jQuery.getJSON({
-        url: configUrl,
+        url: jsonConfigFile,
         context: document.body
       }).done(function (data) {
         profile = $.grep(data, function (n, i) {
