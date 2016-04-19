@@ -27,7 +27,7 @@ s=document.createElement('script');s.type='text/javascript';s.src='https://raw.g
     pageCount = 0,
     cachedPages = [
     ];
-    var statusDiv = '<div style="position: absolute; top: 0;center:0; left: 0; width: 100%; " align="center"><pstyle="color: #cc6699; font-size: 8px; " id="loadingStatus">loading....</p></div>'
+    var statusDiv = '<div onclick="this.remove()" alt="Click to hide" title="Click to hide" style="background-color: #333; color: white;position: fixed; top: 0;center:0; left:40%; width: 400px; height:50px; opacity: 0.6" align="center"><pstyle="font-size: 8px;padding-top:20px" id="loadingStatus">loading....</p></div>'
     jQuery('body').prepend(statusDiv);
     (function () {
       jQuery.getJSON({
@@ -48,7 +48,7 @@ s=document.createElement('script');s.type='text/javascript';s.src='https://raw.g
     }
     var fetchPage = function () {
       if (!profile) return;
-      //profile.maxPages = 10;
+      profile.maxPages = 10;
       var page = jQuery(profile.nextBtn).last().attr('href');
       if (page && jQuery.inArray(page, cachedPages) < 0 && profile.maxPages >= pageCount) {
         cachedPages.push(page);
