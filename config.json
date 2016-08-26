@@ -8,7 +8,7 @@
 	]
 }, {
 	"site": "www.w3schools.com",
-	"rmEl": ".w3-container,#topnav,#leftmenuinner,#card,#bg-exit,div#google_image_div,div[id*=\"google\"],#leftmenu,iframe,#mainLeaderboard,#right,.footer",
+	"rmEl": ".w3-container,#topnav,#leftmenuinner,#card,#bg-exit,div#google_image_div,div[id*=\"google\"],#leftmenu,iframe,#mainLeaderboard,#right,.footer,#sidenav",
 	"maxPages": 100,
 	"nextBtn": ".next a",
 	"batchScripts": [
