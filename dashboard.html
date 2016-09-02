@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Yet another megamenu for Bootstrap 3">
+<meta name="author" content="@geedmo">
+<title>Yamm!3 Megamenu for Bootstrap3</title>
+<!-- Bootstrap and demo CSS -->
+<link href="demo/components/bootstrap/dist/css/bootstrap.min.css"
+  rel="stylesheet">
+<link href="demo/components/bootstrap/dist/css/bootstrap-theme.css"
+  rel="stylesheet">
+
+
+<link href="demo/css/demo.css" rel="stylesheet">
+<!-- Yamm styles-->
+<link href="yamm/yamm.css" rel="stylesheet">
+
+<link rel="stylesheet" href="plugin/select/css/bootstrap-select.css" />
+<link rel="stylesheet"
+  href="plugin/data-table/dataTables.bootstrap.min.css" />    
+    
+
+<style type="text/css">
+    
+    
+.bootstrap-select
+
+
+.form-control
+
+
+:not
+
+ 
+
+(
+[
+class
+*=
+col-
+]
+
+ 
+
+)
+{
+width
+
+
+:
+
+ 
+
+auto
+
+
+;
+}
+.modal-dialog {
+  width: 98%;
+  height: 92%;
+  padding: 0;
+}
+
+.modal-content {
+  height: 99%;
+}
+
+.modal-body {
+  height: 510px;
+  overflow-y: auto;
+}
+
+
+.modal-footer {
+  padding:4px;
+}
+.navbar-xs { min-height:28px; height: 28px; }
+.navbar-xs .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 28px; }
+.navbar-xs .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 28px; }
+
+@import 'https://fonts.google.com/specimen/Roboto?selection.family=Roboto';
+
+body {
+      font-family: 'Roboto', sans-serif;
+      
+    }
+.navbar-brand {
+  background: url(images/logo1.png) center / contain no-repeat;
+  height: 22px;width: 22px;
+  padding-top: 2px;
+}
+
+.brand {
+  background: url(images/logo1.png) center / contain no-repeat;
+  height: 22px;width: 22px;
+  padding-top: 2px;padding-left: 10px;
+}
+
+
+
+
+.panel-default {
+    border-color: #ddd;
+}
+
+.panel {
+    height: 300px padding-top: 0px;
+    padding-right: 10px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 10 1px 1px rgba(10,0,0,.05);
+    box-shadow: 0 5px 5px #eeeeee;
+    margin: 0px 0 0 0;
+    width: 400px;
+    border: 10;
+    height: 350px;
+}
+
+.panel-heading {
+    padding: 1px 15px;
+    border-bottom: 1px solid rgba(82, 17, 17, 0);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+
+</style>
+</head>
+<body>
+  <!-- Demo navbar -->
+  <div class="navbar navbar-xs  yamm  navbar-default   navbar-fixed-top">
+    <div class="container-full">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse"
+          data-target="#navbar-collapse-1" class="navbar-toggle">
+          <span class="icon-bar"></span><span class="icon-bar"></span><span
+            class="icon-bar"></span>
+        </button>
+        
+        <a href="#" class="navbar-brand" style="padding-left:60px;padding-top:2px"><b>RMS</b></a>
+      </div>
+      <div id="navbar-collapse-1" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <!-- Classic list -->
+
+
+          <li class="dropdown"><a href="#" data-toggle="dropdown" style="padding-left:50px" 
+            class="dropdown-toggle"><b>Administration</b><b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <!-- Content container to add padding -->
+                <div class="yamm-content">
+                  <div class="row">
+                    <ul class="col-sm-2 list-unstyled" style="width: 20%">
+                      <li>
+                        <p>
+                          <strong>Financial Engines</strong>
+                        </p>
+                      </li>
+                      <li><a href="#">Modeling Engine</a></li>
+                      <li><a href="#">Reconciliation Engine</a></li>
+                      <li><a href="#">Topside Adjustments</a></li>
+                    </ul>
+                    <ul class="col-sm-2 list-unstyled" style="width: 20%">
+                      <li>
+                        <p>
+                          <strong>Population Adminstration</strong>
+                        </p>
+                      </li>
+                      <li><a href="index.html"> Actual / Placeholder / Model Setup
+                      </a></li>
+
+                    </ul>
+                    <ul class="col-sm-2 list-unstyled" style="width: 20%">
+                      <li>
+                        <p>
+                          <strong>Maintenace</strong>
+                        </p>
+                      </li>
+                      <li><a href="#"> Calender Maintenance </a></li>
+                      <li><a href="#"> Fringe Rate Maintenance </a></li>
+                      <li><a href="#"> FX Rate Maintenance </a></li>
+                      <li><a href="#"> Job Queue Monitoring </a></li>
+                      <li><a href="#"> Reserve ID Maintenance</a></li>
+                    </ul>
+
+                    <ul class="col-sm-2 list-unstyled" style="width: 20%">
+                      <li>
+                        <p>
+                          <strong>Salary to RIF GOC Mapping</strong>
+                        </p>
+                      </li>
+                      <li><a href="#"> Edit GOC Mapping </a></li>
+                      <li><a href="#"> Define Mapping Level Setup</a></li>
+                    </ul>
+
+                    <ul class="col-sm-2 list-unstyled" style="width: 20%">
+                      <li>
+                        <p>
+                          <strong>Security Entitlements</strong>
+                        </p>
+                      </li>
+                      <li><a href="#"> View User Entitlements</a></li>
+
+                    </ul>
+
+
+
+
+
+
+
+                  </div>
+
+                  <div class="row" style="padding-top: 30px">
+                    <ul class="col-sm-2 list-unstyled" style="width: 20%">
+                      <li>
+                        <p>
+                          <strong>Severance Policy Setup</strong>
+                        </p>
+                      </li>
+                      <li><a href="#"> Approval Process </a></li>
+
+
+                    </ul>
+
+
+
+                    <ul class="col-sm-2 list-unstyled" style="width: 20%">
+                      <li>
+                        <p>
+                          <strong>Approver Workflow</strong>
+                        </p>
+                      </li>
+                      <li><a href="#"> Topside Adjustments- Edit Approver
+                          List </a></li>
+                    </ul>
+
+                    <ul class="col-sm-2 list-unstyled" style="width: 20%">
+                      <li>
+                        <p>
+                          <strong>Bulk Upload</strong>
+                        </p>
+                      </li>
+                      <li><a href="#"> Bulk Upload </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul></li>
+
+
+          <!-- Accordion demo -->
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+            class="dropdown-toggle"><b>Reports</b></a></li>
+          <!-- Classic dropdown -->
+
+
+        </ul>
+
+        <style type="text/css">         
+
+
+        </style>
+
+        <ul class="nav navbar-nav navbar-right" style="padding-right: 15px">
+          <li style="color:white;padding-top: 2px; padding-bottom: 15px"><span>Welcome,
+              Lastname, Firstname</span></li>
+          <li style="line-height: 10px;padding-top: 0px; padding-left: 5px"><select
+            class="selectpicker";padding-top: 0px; padding-left: 5px">
+              <option default>Mode: Legal Vehicle Geography View</option>
+              <option>Switch to: Managed Geography View</option>
+          </select></li>
+
+   <li class="dropdown" style="padding:"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></a>
+              <ul role="menu" class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Active Employee...</a></li>
+                <li><a tabindex="-1" href="#">Non RIF Term...</a></li>
+                
+              </ul>
+            </li>
+
+          
+
+          <!-- Classic list -->
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+            class="dropdown-toggle"><span class="glyphicon glyphicon-th" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <!-- Content container to add padding -->
+                <div class="yamm-content">
+                  <div class="row">
+                    <ul class="col-sm-2 list-unstyled" style="width: 40%">
+                      <li>
+                        <p>
+                          <strong>Quick Links</strong>
+                        </p>
+                      </li>
+                      <li><a href="#">City For You</a></li>
+                      <li><a href="#">RMS Proejct Website</a></li>
+                      <li><a href="#">RMS Collaborate</a></li>
+                      <li><a href="#">RCW (restructuring communications
+                          website)</a></li>
+
+                    </ul>
+                    <ul class="col-sm-2 list-unstyled" style="width: 60%">
+                      <li>
+                        <p>
+                          <strong>Help</strong>
+                        </p>
+                      </li>
+                      <li><a href="#"> Contact Details </a></li>
+                      <li><a href="#"> Finance: * CCC US Cash Comp Finance
+                          Corporate Team </a></li>
+                      <li><a href="#"> HR: City Restructing Email Box </a></li>
+                      <li><a href="#"> LATAM and NAM: HR Shared Services
+                          WEST RMS Support </a></li>
+                      <li><a href="#"> EMEA and APAC: HR Shared Services
+                          WEST RMS Support </a></li>
+
+                    </ul>
+
+
+
+
+
+
+                  </div>
+
+
+
+
+
+                </div>
+              </li>
+            </ul></li>
+
+
+          <li><a href="#"></a></span></li>
+
+          <li class="dropdown" style="padding:"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-user" aria-hidden="true"></a>
+              <ul role="menu" class="dropdown-menu">
+                <li><a tabindex="-1" href="#"> <span class="glyphicon glyphicon glyphicon-off" aria-hidden="true"></span> Logout </a></li>
+                
+              </ul>
+            </li>
+
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container" style="padding-top:100px">
+  <div class="row">
+    <div class="col-sm-4">
+
+
+      <div class="panel panel-default"  >
+                  <div class="panel-heading"><h5>Reserve Build Cut-off Date : 25-FEB-2016</h5><h6>Summary Of Reserves</h6></div>
+                  <div class="panel-body" style="height:100px">
+
+                  <select class="selectpicker" style="padding-top: 0px; padding-left: 5px width:100%">
+                          <option default>3Q11_RIF</option>
+                      <option default>3Q11_RIF</option>
+                  </select>
+                    
+                    <div>
+                    <p class="text-left" style="text-align:left">Active</p>
+                    <p style="flow:right">Redeployed/Transferred</p>
+                    <p style="flow:right">Non-Replaced Att..</p>
+                    <p style="flow:right">Rehire</p>
+                    <p style="flow:right">Placeholders</p>
+                    <p style="flow:right">Other</p>
+                    <hr>
+                    <p style="flow:right">Total Headcount</p>
+
+
+
+                    </div>
+                    
+
+                  </div><!--/panel-body-->
+    </div>
+
+
+    </div>
+    <div class="col-sm-4">
+       <div class="panel panel-default" >
+                  <div class="panel-heading"><h5>Summary Of Model</h5><h6>Summary Of Reserves</h6></div>
+                  <div class="panel-body" style="height:100px">
+
+                  <select class="selectpicker" style="padding-top: 0px; padding-left: 5px width:100%">
+                          <option default>Test Fringe Rate</option>
+                      <option default>3Q11_RIF</option>
+                  </select>
+                    
+                    <div>
+                    <p class="text-left" style="text-align:left">Active</p>
+                    <p style="flow:right">Redeployed/Transferred</p>
+                    <p style="flow:right">Non-Replaced Att..</p>
+                    <p style="flow:right">Rehire</p>
+                    <p style="flow:right">Placeholders</p>
+                    <p style="flow:right">Other</p>
+                    <hr>
+                    <p style="flow:right">Total Headcount</p>
+
+
+
+                    </div>
+                    
+
+                  </div><!--/panel-body-->
+    </div>
+
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default" >
+                  <div class="panel-heading"><h5>Reserve Build Cut-off Date : 25-FEB-2016</h5><h6>Summary Of Reserves</h6></div>
+                  <div class="panel-body" style="height:100px">
+
+                  <select class="selectpicker" style="padding-top: 0px; padding-left: 5px width:100%">
+                          <option default>3Q11_RIF</option>
+                      <option default>3Q11_RIF</option>
+                  </select>
+                    
+                    <div>
+                    <p class="text-left" style="text-align:left">Active</p>
+                    <p style="flow:right">Redeployed/Transferred</p>
+                    <p style="flow:right">Non-Replaced Att..</p>
+                    <p style="flow:right">Rehire</p>
+                    <p style="flow:right">Placeholders</p>
+                    <p style="flow:right">Other</p>
+                    <hr>
+                    <p style="flow:right">Total Headcount</p>
+
+
+
+                    </div>
+                    
+
+                  </div><!--/panel-body-->
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+ 
+
+  
+  <div class="container-fluid navbar-fixed-bottom" style="padding-left:0px;margin-left:0px;margin-right:0px">
+    <footer >      
+      <div class="row" style="background-color: #A9A9A9;color:white;font-size:10px;">
+        <div class="col-sm-4">
+          <span style="padding-left:20px;margin-left:10px" class="brand"></span>
+          <span style="padding-left:10px"><a style=" text-decoration: none;color: #FFFFFF;" href="#">CITIGROUP.NET</a></span>        
+          <span style="padding-left:10px"><a href="#" style=" text-decoration: none;color: #FFFFFF;">TERMS & CONDITION</a></span>        
+        </div>
+        <div class="col-sm-8">
+          <div class="social">
+            <ul class="list-inline text-right" style="margin-bottom:0px">
+              <li></li>
+              <li></li>
+              <li><span style="padding-left:10px">&copy;2016 Citigroup Inc</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <!-- /.modal -->
+
+
+
+
+    <!-- /container -->
+    <!-- Bootstrap core JavaScript-->
+    <script src="demo/components/jquery/dist/jquery.js"></script>
+    <script src="demo/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugin/select/js/bootstrap-select.min.js"></script>
+    <script src="plugin/data-table/dataTables.bootstrap.min.js"></script>
+    <script src="plugin/data-table/jquery.dataTables.min.js"></script>
+
+
+    <script>
+    $(function() {
+      window.prettyPrint && prettyPrint()
+      $(document).on('click', '.yamm .dropdown-menu', function(e) {
+        e.stopPropagation()
+      })
+    })
+
+    $(document).ready(function() {
+       $('#example').DataTable( {
+        "scrollX": true,
+        "searching": false,
+        "dom": 'ftipr'
+    } );
+
+    $('#example1').DataTable( {
+        "scrollX": true,
+        "searching": false,
+        "dom": 'ftipr'
+    } );
+
+    });
+  </script>
+    <!-- tweet and share :)-->
+    <script>
+    !function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, "script", "twitter-wjs");
+  </script>
+</body>
+</html>
