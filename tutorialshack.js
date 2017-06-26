@@ -11,7 +11,7 @@
     pageCount = 0,
     cachedPages = [
     ];
-    var statusDiv = '<div onclick="this.remove()" alt="Click to hide" title="Click to hide" style="background-color: #333; color: red;position: fixed; top: 0;center:0; left:40%; width: 400px; height:50px; opacity: 0.6" align="center"><p  id="loadingStatus">loading....</p></div>'
+    var statusDiv = '<div onclick="this.remove()" alt="Click to hide" title="Click to hide" style="background-color: black; color: white;position: fixed; top: 0;center:0; left:40%; width: 400px; height:50px;" align="center"><p  id="loadingStatus">loading....</p></div>'
     jQuery('body').prepend(statusDiv);
     (function () {
       jQuery.getJSON({
