@@ -12,7 +12,7 @@
             categories: ["Cd", "F2F"]
         }
     ]
-
+    //Iterate tracks
     tracks.forEach(function(track) {
         let divs = $("." + track.type);
         let cats = track.categories;
